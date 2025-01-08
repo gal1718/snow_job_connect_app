@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ws_operation">
+    <sys_ws_operation action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <consumes>application/json</consumes>
+        <consumes_customized>false</consumes_customized>
+        <default_operation_uri/>
+        <enforce_acl>cf9d01d3e73003009d6247e603f6a990</enforce_acl>
+        <http_method>PATCH</http_method>
+        <name>Update Job (v2)</name>
+        <operation_script><![CDATA[(function process( /*RESTAPIRequest*/ request, /*RESTAPIResponse*/ response) {
+
+    //Declare empty array for answer
+    var answer = [];
+
+    // Get the job id from the path params
+    var job_sys_id = request.pathParams.job;
+
+    //Declare variables for for the possible namesin the request body
+    var requestBody = request.body.data;
+    var title = requestBody.title;
+    var short_description = requestBody.short_description;
+    // var title = requestBody.title;
+    // var title = requestBody.title;
+    // var title = requestBody.title;
+
+    if (!job_sys_id) {
+        response.setError(new sn_ws_err.NotFoundError('job id not provided.'));
+        response.setStatus(404);
+        return;
+    }
+
+    if (!title && !short_description) {
+        response.setError(new sn_ws_err.NotFoundError('Object contains no or invalid properties.'));
+        response.setStatus(404);
+        return;
+    }
+
+    var job_gr = new GlideRecord("x_738442_job_con_jobs");
+    job_gr.addQuery("sys_id", job_sys_id);
+    job_gr.query();
+
+    if (!job_gr.hasNext()) {
+        response.setError(new sn_ws_err.NotFoundError('No record found.'));
+        response.setStatus(404);
+        return;
+    }
+
+    if (job_gr.next()) {
+        if (title) {
+            job_gr.title = title;
+        }
+        if (short_description) {
+            job_gr.short_description = short_description;
+        }
+
+        job_gr.update();
+    }
+
+    response.setStatus(200);
+
+    //Create a JSON object with details of the updated record
+    var job_obj = {
+        "number": job_gr.number,
+        "id": job_gr.sys_id,
+        "title": job_gr.title,
+        "short_description": job_gr.short_description
+    };
+
+	answer.push(job_obj);
+	response.setBody(answer);
+
+
+})(request, response);]]></operation_script>
+        <operation_uri>/api/x_738442_job_con/v2/job_connect/job/{job}</operation_uri>
+        <produces>application/json</produces>
+        <produces_customized>false</produces_customized>
+        <relative_path>/job/{job}</relative_path>
+        <request_example/>
+        <requires_acl_authorization>true</requires_acl_authorization>
+        <requires_authentication>true</requires_authentication>
+        <requires_snc_internal_role>true</requires_snc_internal_role>
+        <short_description/>
+        <sys_class_name>sys_ws_operation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-03 16:19:07</sys_created_on>
+        <sys_id>efb50672837a9610c92d9496feaad34b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Update Job (v2)</sys_name>
+        <sys_package display_value="job_connect" source="x_738442_job_con">09aafabb83e6d610c92d9496feaad305</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="job_connect">09aafabb83e6d610c92d9496feaad305</sys_scope>
+        <sys_update_name>sys_ws_operation_efb50672837a9610c92d9496feaad34b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-03 16:19:07</sys_updated_on>
+        <web_service_definition display_value="job connect">431a09ba83369610c92d9496feaad302</web_service_definition>
+        <web_service_version display_value="v2">dbb506f2833a9610c92d9496feaad3c6</web_service_version>
+    </sys_ws_operation>
+</record_update>

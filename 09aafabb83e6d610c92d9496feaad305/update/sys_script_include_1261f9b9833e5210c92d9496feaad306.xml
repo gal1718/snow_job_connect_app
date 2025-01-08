@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_738442_job_con.createJobLike</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <mobile_callable>false</mobile_callable>
+        <name>createJobLike</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[// Name: CreateJobLikes
+// Accessible from: All application scopes
+
+function createJobLike(jobId, userId) {
+	gs.info("GALIA56::: script include called job:" + jobId + " userId: " + userId);
+    if (!jobId || !userId) {
+        gs.error("Job ID and User ID are required to create a record in job_likes.");
+        return false;
+    }
+
+    try {
+        var gr = new GlideRecord('x_738442_job_con_job_likes');
+        gr.initialize();
+        gr.job = jobId.toString(); // Replace 'job_id' with the actual field name in your table
+        gr.user = userId.toString(); // Replace 'user_id' with the actual field name in your table
+        var newSysId = gr.insert();
+
+        if (newSysId) {
+            gs.info("Successfully created a job_like record with sys_id: " + newSysId);
+            return newSysId;
+        } else {
+            gs.error("Failed to create a job_like record.");
+            return false;
+        }
+    } catch (error) {
+        gs.error("Error while creating job_like record: " + error.message);
+        return false;
+    }
+}
+]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-12-31 12:21:20</sys_created_on>
+        <sys_id>1261f9b9833e5210c92d9496feaad306</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>createJobLike</sys_name>
+        <sys_package display_value="job_connect" source="x_738442_job_con">09aafabb83e6d610c92d9496feaad305</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="job_connect">09aafabb83e6d610c92d9496feaad305</sys_scope>
+        <sys_update_name>sys_script_include_1261f9b9833e5210c92d9496feaad306</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-12-31 12:58:57</sys_updated_on>
+    </sys_script_include>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>1261f9b9833e5210c92d9496feaad306</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-12-31 12:21:20</sys_created_on>
+        <sys_id>c382fd79833e5210c92d9496feaad35e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-12-31 12:21:20</sys_updated_on>
+        <table>sys_script_include</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

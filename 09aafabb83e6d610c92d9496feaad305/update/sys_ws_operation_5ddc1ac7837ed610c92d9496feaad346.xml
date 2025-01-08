@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ws_operation">
+    <sys_ws_operation action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <consumes>application/json</consumes>
+        <consumes_customized>false</consumes_customized>
+        <default_operation_uri/>
+        <enforce_acl>cf9d01d3e73003009d6247e603f6a990</enforce_acl>
+        <http_method>DELETE</http_method>
+        <name>Delete Job (v3)</name>
+        <operation_script><![CDATA[(function process( /*RESTAPIRequest*/ request, /*RESTAPIResponse*/ response) {
+
+    //Declare empty array for answer
+    var answer = [];
+
+    // Get the job id from the path params
+    var job_sys_id = request.pathParams.job;
+
+    if (!job_sys_id) {
+        response.setError(new sn_ws_err.NotFoundError('job id not provided.'));
+        response.setStatus(404);
+        return;
+    }
+
+    var job_gr = new GlideRecordSecure("x_738442_job_con_jobs");
+    job_gr.addQuery("sys_id", job_sys_id);
+    job_gr.query();
+
+    if (!job_gr.hasNext()) {
+        response.setError(new sn_ws_err.NotFoundError('No record found.'));
+        response.setStatus(404);
+        return;
+    }
+
+    if (job_gr.next()) {
+        job_gr.deleteRecord();
+
+        var job_obj = {
+            "number": job_gr.number,
+            "id": job_gr.sys_id,
+            "title": job_gr.title,
+            "short_description": job_gr.short_description,
+            "message": "Job Deleted."
+        };
+
+        answer.push(job_obj);
+
+    }
+
+    response.setBody(answer);
+
+
+
+
+})(request, response);]]></operation_script>
+        <operation_uri>/api/x_738442_job_con/v3/job_connect/job/{job}</operation_uri>
+        <produces>application/json</produces>
+        <produces_customized>false</produces_customized>
+        <relative_path>/job/{job}</relative_path>
+        <request_example/>
+        <requires_acl_authorization>true</requires_acl_authorization>
+        <requires_authentication>true</requires_authentication>
+        <requires_snc_internal_role>true</requires_snc_internal_role>
+        <short_description/>
+        <sys_class_name>sys_ws_operation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-04 12:38:29</sys_created_on>
+        <sys_id>5ddc1ac7837ed610c92d9496feaad346</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Delete Job (v3)</sys_name>
+        <sys_package display_value="job_connect" source="x_738442_job_con">09aafabb83e6d610c92d9496feaad305</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="job_connect">09aafabb83e6d610c92d9496feaad305</sys_scope>
+        <sys_update_name>sys_ws_operation_5ddc1ac7837ed610c92d9496feaad346</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-04 12:50:20</sys_updated_on>
+        <web_service_definition display_value="job connect">431a09ba83369610c92d9496feaad302</web_service_definition>
+        <web_service_version display_value="v3">1ddc1ac7837ed610c92d9496feaad342</web_service_version>
+    </sys_ws_operation>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>5ddc1ac7837ed610c92d9496feaad346</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-04 12:50:19</sys_created_on>
+        <sys_id>7a8f1acb837ed610c92d9496feaad3bc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-04 12:50:19</sys_updated_on>
+        <table>sys_ws_operation</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

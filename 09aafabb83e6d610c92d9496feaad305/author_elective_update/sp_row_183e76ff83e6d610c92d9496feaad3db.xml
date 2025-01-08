@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_row">
+    <sp_row action="DELETE">
+        <class_name/>
+        <order>1</order>
+        <semantic_tag/>
+        <sp_column/>
+        <sp_container display_value="Copy of jbc homepage (1) - Container 1">583e76ff83e6d610c92d9496feaad3d8</sp_container>
+        <sys_class_name>sp_row</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-12-25 12:43:59</sys_created_on>
+        <sys_id>183e76ff83e6d610c92d9496feaad3db</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>1</sys_name>
+        <sys_package display_value="job_connect" source="x_738442_job_con">09aafabb83e6d610c92d9496feaad305</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="job_connect">09aafabb83e6d610c92d9496feaad305</sys_scope>
+        <sys_update_name>sp_row_183e76ff83e6d610c92d9496feaad3db</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-12-25 12:43:59</sys_updated_on>
+    </sp_row>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="job_connect">09aafabb83e6d610c92d9496feaad305</application>
+        <file_path/>
+        <instance_id>7191ad9d1b058e5065324089bd4bcbc4</instance_id>
+        <instance_name>dev244347</instance_name>
+        <name>sp_row_183e76ff83e6d610c92d9496feaad3db</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_row"><sp_row action="INSERT_OR_UPDATE"><class_name/><order>1</order><semantic_tag/><sp_column/><sp_container display_value="Copy of jbc homepage (1) - Container 1">583e76ff83e6d610c92d9496feaad3d8</sp_container><sys_class_name>sp_row</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-12-25 12:43:59</sys_created_on><sys_id>183e76ff83e6d610c92d9496feaad3db</sys_id><sys_mod_count>0</sys_mod_count><sys_name>1</sys_name><sys_package display_value="job_connect" source="x_738442_job_con">09aafabb83e6d610c92d9496feaad305</sys_package><sys_policy/><sys_scope display_value="job_connect">09aafabb83e6d610c92d9496feaad305</sys_scope><sys_update_name>sp_row_183e76ff83e6d610c92d9496feaad3db</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-12-25 12:43:59</sys_updated_on></sp_row></record_update>]]></payload>
+        <payload_hash>-827514713</payload_hash>
+        <record_name>1</record_name>
+        <reverted_from/>
+        <source>4acd3ebf83e6d610c92d9496feaad330</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-12-25 12:43:59</sys_created_on>
+        <sys_id>9c3e76ff83e6d610c92d9496feaad3dd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>193fdd86c430000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-12-25 12:43:59</sys_updated_on>
+        <type>Row</type>
+        <update_guid>503e76ffeee6d610cc91c98ef731d6dd</update_guid>
+        <update_guid_history>503e76ffeee6d610cc91c98ef731d6dd:-827514713</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="1">fc160b7b832ad610c92d9496feaad3e0</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-12-25 13:18:25</sys_created_on>
+        <sys_db_object display_value="" name="sp_row">sp_row</sys_db_object>
+        <sys_id>36cf1586f5f34022b883c8d9e8dd6024</sys_id>
+        <sys_metadata>183e76ff83e6d610c92d9496feaad3db</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>1</sys_name>
+        <sys_package display_value="job_connect" source="x_738442_job_con">09aafabb83e6d610c92d9496feaad305</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="job_connect">09aafabb83e6d610c92d9496feaad305</sys_scope>
+        <sys_scope_delete display_value="">6626edc1ba62406f86e02fa34c749ed9</sys_scope_delete>
+        <sys_update_name>sp_row_183e76ff83e6d610c92d9496feaad3db</sys_update_name>
+        <sys_update_version display_value="sp_row_183e76ff83e6d610c92d9496feaad3db">9c3e76ff83e6d610c92d9496feaad3dd</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-12-25 13:18:25</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

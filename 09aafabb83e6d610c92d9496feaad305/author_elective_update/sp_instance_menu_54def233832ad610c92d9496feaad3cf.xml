@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance_menu">
+    <sp_instance_menu action="DELETE">
+        <active>true</active>
+        <class_name/>
+        <color>default</color>
+        <css/>
+        <glyph/>
+        <id/>
+        <order>1</order>
+        <roles/>
+        <short_description/>
+        <size>md</size>
+        <sp_column/>
+        <sp_widget display_value="JBC Header menu">e4500f73832ad610c92d9496feaad398</sp_widget>
+        <sys_class_name>sp_instance_menu</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-12-25 12:47:00</sys_created_on>
+        <sys_id>54def233832ad610c92d9496feaad3cf</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>JBC Header Menu</sys_name>
+        <sys_package display_value="job_connect" source="x_738442_job_con">09aafabb83e6d610c92d9496feaad305</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="job_connect">09aafabb83e6d610c92d9496feaad305</sys_scope>
+        <sys_update_name>sp_instance_menu_54def233832ad610c92d9496feaad3cf</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-12-25 12:54:14</sys_updated_on>
+        <title>JBC Header Menu</title>
+        <url/>
+        <widget_parameters/>
+    </sp_instance_menu>
+    <sys_translated_text action="DELETE" query="documentkey=54def233832ad610c92d9496feaad3cf"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="job_connect">09aafabb83e6d610c92d9496feaad305</application>
+        <file_path/>
+        <instance_id>7191ad9d1b058e5065324089bd4bcbc4</instance_id>
+        <instance_name>dev244347</instance_name>
+        <name>sp_instance_menu_54def233832ad610c92d9496feaad3cf</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance_menu"><sp_instance_menu action="INSERT_OR_UPDATE"><active>true</active><class_name/><color>default</color><css/><glyph/><id/><order>1</order><roles/><short_description/><size>md</size><sp_column/><sp_widget display_value="JBC Header menu">e4500f73832ad610c92d9496feaad398</sp_widget><sys_class_name>sp_instance_menu</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-12-25 12:47:00</sys_created_on><sys_id>54def233832ad610c92d9496feaad3cf</sys_id><sys_mod_count>2</sys_mod_count><sys_name>JBC Header Menu</sys_name><sys_package display_value="job_connect" source="x_738442_job_con">09aafabb83e6d610c92d9496feaad305</sys_package><sys_policy/><sys_scope display_value="job_connect">09aafabb83e6d610c92d9496feaad305</sys_scope><sys_update_name>sp_instance_menu_54def233832ad610c92d9496feaad3cf</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-12-25 12:54:14</sys_updated_on><title>JBC Header Menu</title><url/><widget_parameters/></sp_instance_menu><sys_translated_text action="delete_multiple" query="documentkey=54def233832ad610c92d9496feaad3cf"/></record_update>]]></payload>
+        <payload_hash>-1864298281</payload_hash>
+        <record_name>JBC Header Menu</record_name>
+        <reverted_from/>
+        <source>4acd3ebf83e6d610c92d9496feaad330</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-12-25 12:54:14</sys_created_on>
+        <sys_id>e680c7b3832ad610c92d9496feaad399</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>193fde1cf630000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-12-25 12:54:14</sys_updated_on>
+        <type>Instance with Menu</type>
+        <update_guid>2e80c7b3e72ad61082de5fb4f32b6598</update_guid>
+        <update_guid_history>2e80c7b3e72ad61082de5fb4f32b6598:-1864298281,0d0f3a33702ad610ec071866ad030b29:-1491502892,eceeb233972ad6109879a7fba81a41ba:-1886678683</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="JBC Header Menu">bd368b7b832ad610c92d9496feaad305</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-12-25 13:19:02</sys_created_on>
+        <sys_db_object display_value="" name="sp_instance_menu">sp_instance_menu</sys_db_object>
+        <sys_id>02341f0c184c475cb2987aa609e44190</sys_id>
+        <sys_metadata>54def233832ad610c92d9496feaad3cf</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>JBC Header Menu</sys_name>
+        <sys_package display_value="job_connect" source="x_738442_job_con">09aafabb83e6d610c92d9496feaad305</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="job_connect">09aafabb83e6d610c92d9496feaad305</sys_scope>
+        <sys_scope_delete display_value="">6626edc1ba62406f86e02fa34c749ed9</sys_scope_delete>
+        <sys_update_name>sp_instance_menu_54def233832ad610c92d9496feaad3cf</sys_update_name>
+        <sys_update_version display_value="sp_instance_menu_54def233832ad610c92d9496feaad3cf">e680c7b3832ad610c92d9496feaad399</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-12-25 13:19:02</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

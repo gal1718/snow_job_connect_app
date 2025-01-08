@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_ng_pro_sp_widget">
+    <m2m_sp_ng_pro_sp_widget action="DELETE">
+        <sp_angular_provider display_value="galDropdownTreeTemplate">acc81926477442104106f3f2e16d4345</sp_angular_provider>
+        <sp_widget display_value="Copy of gal Header Menu">582ffa33832ad610c92d9496feaad312</sp_widget>
+        <sys_class_name>m2m_sp_ng_pro_sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-12-25 12:48:04</sys_created_on>
+        <sys_id>dc2ffa33832ad610c92d9496feaad31b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>galDropdownTreeTemplate.Copy of gal Header Menu</sys_name>
+        <sys_package display_value="job_connect" source="x_738442_job_con">09aafabb83e6d610c92d9496feaad305</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="job_connect">09aafabb83e6d610c92d9496feaad305</sys_scope>
+        <sys_update_name>m2m_sp_ng_pro_sp_widget_dc2ffa33832ad610c92d9496feaad31b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-12-25 12:48:04</sys_updated_on>
+    </m2m_sp_ng_pro_sp_widget>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="job_connect">09aafabb83e6d610c92d9496feaad305</application>
+        <file_path/>
+        <instance_id>7191ad9d1b058e5065324089bd4bcbc4</instance_id>
+        <instance_name>dev244347</instance_name>
+        <name>m2m_sp_ng_pro_sp_widget_dc2ffa33832ad610c92d9496feaad31b</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_ng_pro_sp_widget"><m2m_sp_ng_pro_sp_widget action="INSERT_OR_UPDATE"><sp_angular_provider display_value="galDropdownTreeTemplate">acc81926477442104106f3f2e16d4345</sp_angular_provider><sp_widget display_value="Copy of gal Header Menu">582ffa33832ad610c92d9496feaad312</sp_widget><sys_class_name>m2m_sp_ng_pro_sp_widget</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-12-25 12:48:04</sys_created_on><sys_id>dc2ffa33832ad610c92d9496feaad31b</sys_id><sys_mod_count>0</sys_mod_count><sys_name>galDropdownTreeTemplate.Copy of gal Header Menu</sys_name><sys_package display_value="job_connect" source="x_738442_job_con">09aafabb83e6d610c92d9496feaad305</sys_package><sys_policy/><sys_scope display_value="job_connect">09aafabb83e6d610c92d9496feaad305</sys_scope><sys_update_name>m2m_sp_ng_pro_sp_widget_dc2ffa33832ad610c92d9496feaad31b</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-12-25 12:48:04</sys_updated_on></m2m_sp_ng_pro_sp_widget></record_update>]]></payload>
+        <payload_hash>-508530859</payload_hash>
+        <record_name>galDropdownTreeTemplate.Copy of gal Header Menu</record_name>
+        <reverted_from/>
+        <source>4acd3ebf83e6d610c92d9496feaad330</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-12-25 12:48:04</sys_created_on>
+        <sys_id>982ffa33832ad610c92d9496feaad337</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>193fddc2a680000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-12-25 12:48:04</sys_updated_on>
+        <type>Angular Providers</type>
+        <update_guid>102ffa33d12ad610daf66b55aa7b2e1e</update_guid>
+        <update_guid_history>102ffa33d12ad610daf66b55aa7b2e1e:-508530859</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="galDropdownTreeTemplate.Copy of gal Header Menu">60b68f7b832ad610c92d9496feaad31c</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-12-25 13:21:08</sys_created_on>
+        <sys_db_object display_value="" name="m2m_sp_ng_pro_sp_widget">m2m_sp_ng_pro_sp_widget</sys_db_object>
+        <sys_id>903713fd59ba4d64bb082e0d571695e9</sys_id>
+        <sys_metadata>dc2ffa33832ad610c92d9496feaad31b</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>galDropdownTreeTemplate.Copy of gal Header Menu</sys_name>
+        <sys_package display_value="job_connect" source="x_738442_job_con">09aafabb83e6d610c92d9496feaad305</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="job_connect">09aafabb83e6d610c92d9496feaad305</sys_scope>
+        <sys_scope_delete display_value="">6626edc1ba62406f86e02fa34c749ed9</sys_scope_delete>
+        <sys_update_name>m2m_sp_ng_pro_sp_widget_dc2ffa33832ad610c92d9496feaad31b</sys_update_name>
+        <sys_update_version display_value="m2m_sp_ng_pro_sp_widget_dc2ffa33832ad610c92d9496feaad31b">982ffa33832ad610c92d9496feaad337</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-12-25 13:21:08</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="6f29017a83369610c92d9496feaad3b5" label="Job Application" max_length="40" name="x_738442_job_con_job_application" type="collection">
+        <element label="User" max_length="32" name="user" reference="sys_user" type="reference"/>
+        <element label="Job" max_length="32" name="job" reference="x_738442_job_con_jobs" type="reference"/>
+        <index name="index">
+            <element name="job"/>
+        </index>
+        <index name="index2">
+            <element name="user"/>
+        </index>
+    </element>
+</database>

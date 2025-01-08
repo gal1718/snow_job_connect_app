@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_user_role">
+    <sys_user_role action="DELETE">
+        <assignable_by/>
+        <can_delegate>true</can_delegate>
+        <description/>
+        <elevated_privilege>false</elevated_privilege>
+        <grantable>true</grantable>
+        <includes_roles/>
+        <name>x_738442_job_con.job_con_rest_user</name>
+        <scoped_admin>false</scoped_admin>
+        <suffix>job_con_rest_user</suffix>
+        <sys_class_name>sys_user_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-04 07:48:37</sys_created_on>
+        <sys_id>5d4a55c7833ad610c92d9496feaad392</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_738442_job_con.job_con_rest_user</sys_name>
+        <sys_package display_value="job_connect" source="x_738442_job_con">09aafabb83e6d610c92d9496feaad305</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="job_connect">09aafabb83e6d610c92d9496feaad305</sys_scope>
+        <sys_update_name>sys_user_role_5d4a55c7833ad610c92d9496feaad392</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-04 07:48:37</sys_updated_on>
+    </sys_user_role>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="job_connect">09aafabb83e6d610c92d9496feaad305</application>
+        <file_path/>
+        <instance_id>7191ad9d1b058e5065324089bd4bcbc4</instance_id>
+        <instance_name>dev244347</instance_name>
+        <name>sys_user_role_5d4a55c7833ad610c92d9496feaad392</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_user_role"><sys_user_role action="INSERT_OR_UPDATE"><assignable_by/><can_delegate>true</can_delegate><description/><elevated_privilege>false</elevated_privilege><grantable>true</grantable><includes_roles/><name>x_738442_job_con.job_con_rest_user</name><scoped_admin>false</scoped_admin><suffix>job_con_rest_user</suffix><sys_class_name>sys_user_role</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-01-04 07:48:37</sys_created_on><sys_id>5d4a55c7833ad610c92d9496feaad392</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_738442_job_con.job_con_rest_user</sys_name><sys_package display_value="job_connect" source="x_738442_job_con">09aafabb83e6d610c92d9496feaad305</sys_package><sys_policy/><sys_scope display_value="job_connect">09aafabb83e6d610c92d9496feaad305</sys_scope><sys_update_name>sys_user_role_5d4a55c7833ad610c92d9496feaad392</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-01-04 07:48:37</sys_updated_on></sys_user_role></record_update>]]></payload>
+        <payload_hash>-727269943</payload_hash>
+        <record_name>x_738442_job_con.job_con_rest_user</record_name>
+        <reverted_from/>
+        <source>4acd3ebf83e6d610c92d9496feaad330</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-04 07:48:37</sys_created_on>
+        <sys_id>9b7a1dc7833ad610c92d9496feaad360</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19430499a5b0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-04 07:48:37</sys_updated_on>
+        <type>Role</type>
+        <update_guid>9f7a1dc7383ad610cfeb562665b31a5f</update_guid>
+        <update_guid_history>9f7a1dc7383ad610cfeb562665b31a5f:-727269943</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="x_738442_job_con.job_con_rest_user">738a55c7833ad610c92d9496feaad370</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-04 07:48:55</sys_created_on>
+        <sys_db_object display_value="" name="sys_user_role">sys_user_role</sys_db_object>
+        <sys_id>9717f18eb7874d9c83a2a21beb03d710</sys_id>
+        <sys_metadata>5d4a55c7833ad610c92d9496feaad392</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_738442_job_con.job_con_rest_user</sys_name>
+        <sys_package display_value="job_connect" source="x_738442_job_con">09aafabb83e6d610c92d9496feaad305</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="job_connect">09aafabb83e6d610c92d9496feaad305</sys_scope>
+        <sys_scope_delete display_value="">6626edc1ba62406f86e02fa34c749ed9</sys_scope_delete>
+        <sys_update_name>sys_user_role_5d4a55c7833ad610c92d9496feaad392</sys_update_name>
+        <sys_update_version display_value="sys_user_role_5d4a55c7833ad610c92d9496feaad392">9b7a1dc7833ad610c92d9496feaad360</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-04 07:48:55</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

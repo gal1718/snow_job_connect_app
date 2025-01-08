@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_list parent="" relationship="" sys_domain="global" table="x_738442_job_con_jobs" version="2" view="sys_ref_list">
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>number</element>
+            <list_id display_value="x_738442_job_con_jobs" element="NULL" name="x_738442_job_con_jobs" parent="NULL" relationship="NULL" sys_domain="global" view="fa29b350310212108a7c7b974a26f23f">a960297583fa5210c92d9496feaad3c4</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>0</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-12-31 11:02:02</sys_created_on>
+            <sys_id>6560297583fa5210c92d9496feaad3c6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-12-31 11:02:02</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element/>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <name>x_738442_job_con_jobs</name>
+            <parent/>
+            <position/>
+            <relationship/>
+            <sum>false</sum>
+            <sys_class_name>sys_ui_list</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-12-31 11:02:02</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>a960297583fa5210c92d9496feaad3c4</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_738442_job_con_jobs</sys_name>
+            <sys_package display_value="job_connect" source="x_738442_job_con">09aafabb83e6d610c92d9496feaad305</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="job_connect">09aafabb83e6d610c92d9496feaad305</sys_scope>
+            <sys_update_name>sys_ui_list_x_738442_job_con_jobs_sys_ref_list</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-12-31 11:02:02</sys_updated_on>
+            <sys_user/>
+            <view display_value="Reference List" name="sys_ref_list">fa29b350310212108a7c7b974a26f23f</view>
+            <view_name/>
+        </sys_ui_list>
+    </sys_ui_list>
+</record_update>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="c10e5b1383761210c92d9496feaad3e0" label="User CV" max_length="40" name="x_738442_job_con_user_cv" type="collection">
+        <element label="User" max_length="32" name="user" reference="sys_user" type="reference"/>
+        <element label="CV 1" max_length="40" name="cv_1" type="file_attachment"/>
+        <index name="index">
+            <element name="user"/>
+        </index>
+    </element>
+</database>

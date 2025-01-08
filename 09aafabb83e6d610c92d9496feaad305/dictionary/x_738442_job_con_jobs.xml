@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="7d2dba7f83e6d610c92d9496feaad3a0" label="Jobs" max_length="40" name="x_738442_job_con_jobs" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="Description" max_length="600" name="description" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Title" max_length="100" name="title" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Work Location" max_length="40" name="work_location" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="On-site" value="1"/>
+                <element inactive_on_update="false" label="Remote" value="2"/>
+                <element inactive_on_update="false" label="Hybrid" value="3"/>
+            </choice>
+        </element>
+        <element default="true" label="Active" max_length="40" name="active" type="boolean"/>
+        <element choice="1" label="Work Schedule" max_length="40" name="work_schedule" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Part-Time" value="2"/>
+                <element inactive_on_update="false" label="Full-Time" value="1"/>
+            </choice>
+        </element>
+        <element default="javascript:current.getTableName();" label="Class" max_length="80" name="sys_class_name" type="sys_class_name"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Short Description" max_length="100" name="short_description" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Employment Type" max_length="40" name="employment_type" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Freelance" value="2"/>
+                <element inactive_on_update="false" label="Contract" value="1"/>
+            </choice>
+        </element>
+        <element label="Posted Date" max_length="40" name="posted_date" type="glide_date"/>
+        <element label="User likes" max_length="4000" name="user_likes" reference="sys_user" reference_qual="active=true^EQ" reference_qual_condition="active=true^EQ" type="glide_list"/>
+        <element label="Job Description" max_length="8000" name="job_description" type="translated_html"/>
+        <index name="index">
+            <element name="sys_class_name"/>
+        </index>
+    </element>
+</database>

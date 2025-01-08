@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ws_operation">
+    <sys_ws_operation action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <consumes>application/json</consumes>
+        <consumes_customized>false</consumes_customized>
+        <default_operation_uri>/api/x_738442_job_con/job_connect/job_applications/{company}</default_operation_uri>
+        <enforce_acl>cf9d01d3e73003009d6247e603f6a990</enforce_acl>
+        <http_method>GET</http_method>
+        <name>Get job applications</name>
+        <operation_script><![CDATA[(function process( /*RESTAPIRequest*/ request, /*RESTAPIResponse*/ response) {
+
+    // implement resource here
+    var answer = [];
+    //add also query params...
+
+    var company = request.pathParams.company;
+    if (!company) {
+        response.setError(new sn_ws_err.NotFoundError('Company not provided.'));
+        response.setStatus(404);
+        return;
+    }
+
+	//worklocations query param. optional.
+    var workLocations = request.queryParams.workLocations;
+
+
+    var app_gr = new GlideRecord("x_738442_job_con_job_application");
+    app_gr.addEncodedQuery("job.u_company.sys_id=" + company);
+    if (workLocations) {
+        app_gr.addEncodedQuery("job.work_locationIN" + workLocations);
+    }
+    app_gr.query();
+
+    gs.info("GALIAS: " + app_gr.getEncodedQuery());
+
+    if (!app_gr.hasNext()) {
+        response.setError(new sn_ws_err.NotFoundError('No records found.'));
+        response.setStatus(404);
+        return;
+    }
+
+    while (app_gr.next()) {
+
+        var job_app = {
+            "job_title": app_gr.job.title,
+            "user": app_gr.user.getDisplayValue(),
+        };
+        answer.push(job_app);
+    }
+
+    response.setBody(answer);
+
+
+})(request, response);]]></operation_script>
+        <operation_uri>/api/x_738442_job_con/v1/job_connect/job_applications/{company}</operation_uri>
+        <produces>application/json</produces>
+        <produces_customized>false</produces_customized>
+        <relative_path>/job_applications/{company}</relative_path>
+        <request_example/>
+        <requires_acl_authorization>true</requires_acl_authorization>
+        <requires_authentication>true</requires_authentication>
+        <requires_snc_internal_role>true</requires_snc_internal_role>
+        <short_description/>
+        <sys_class_name>sys_ws_operation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-03 12:09:58</sys_created_on>
+        <sys_id>d69c4dba83369610c92d9496feaad340</sys_id>
+        <sys_mod_count>11</sys_mod_count>
+        <sys_name>Get job applications</sys_name>
+        <sys_package display_value="job_connect" source="x_738442_job_con">09aafabb83e6d610c92d9496feaad305</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="job_connect">09aafabb83e6d610c92d9496feaad305</sys_scope>
+        <sys_update_name>sys_ws_operation_d69c4dba83369610c92d9496feaad340</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-03 16:18:15</sys_updated_on>
+        <web_service_definition display_value="job connect">431a09ba83369610c92d9496feaad302</web_service_definition>
+        <web_service_version display_value="v1">ea850e32837a9610c92d9496feaad35b</web_service_version>
+    </sys_ws_operation>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>d69c4dba83369610c92d9496feaad340</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-03 12:09:58</sys_created_on>
+        <sys_id>f9bc097e83369610c92d9496feaad37a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-03 12:09:58</sys_updated_on>
+        <table>sys_ws_operation</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>
